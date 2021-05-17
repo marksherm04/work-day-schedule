@@ -21,163 +21,123 @@
     
     <script src="https://kit.fontawesome.com/b84704e90a.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
-
+    <!-- header start -->
     <header class="jumbotron">
-      <h1 class="display-3 text-center">Work Day Scheduler</h1>
-      <p class="lead text-center">A simple calendar app for scheduling your work day</p>
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <br>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <main class="col-12">
+    <!-- header end -->
+    
     <div class="container">
+
       <!-- Timeblocks go here -->
-      <div class="row border">
-        <div class="col-2">
-            0800 
+      <div class="row time-block" id="0800hr">
+        <div class="col-md-1 hour">
+          0800
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Task
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            0900 
+      <div class="row time-block" id="0900hr">
+        <div class="col-md-1 hour">
+          0900
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Meeting
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1000 
+      <div class="row time-block" id="1000hr">
+        <div class="col-md-1 hour">
+          1000
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Task
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1100
+      <div class="row time-block" id="1100hr">
+        <div class="col-md-1 hour">
+          1100
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Meeting
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1200 
+      <div class="row time-block" id="1200hr">
+        <div class="col-md-1 hour">
+          1200
         </div>
-        <div class="col-8 d-flex justify-content-center">
-          Task
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1300 
+      <div class="row time-block" id="1300hr">
+        <div class="col-md-1 hour">
+          1300
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Meeting
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1400 
+      <div class="row time-block" id="1400hr">
+        <div class="col-md-1 hour">
+          1400
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Task
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1500 
+      <div class="row time-block" id="1500hr">
+        <div class="col-md-1 hour">
+          1500
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Meeting
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1600
+      <div class="row time-block" id="1600hr">
+        <div class="col-md-1 hour">
+          1600
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Task
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
 
-      <div class="row border">
-        <div class="col-2">
-            1700 
+      <div class="row time-block" id="1700hr">
+        <div class="col-md-1 hour">
+          1700
         </div>
-        <div class="col-8 d-flex justify-content-center">
-            Meeting
-        </div>
-        <div class="col-2">
-          <button class="saveBtn">
-            <i class="fas fa-save"></i>
-          </button>
-        </div>
+        <textarea class="desciption col-md-10"></textarea>
+        <button class="btn saveBtn col-md-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      
-      
-    </div>
-  </main>
+  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
