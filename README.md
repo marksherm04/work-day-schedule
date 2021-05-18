@@ -19,6 +19,7 @@ Click [here](https://marksherm04.github.io/work-day-schedule/) to go to Code Qui
 
 ## Screenshot
 
+<img width="2551" alt="Screen Shot 2021-05-17 at 9 55 36 PM" src="https://user-images.githubusercontent.com/81338255/118578805-d5646c00-b75a-11eb-893a-7ffa550a67c0.png">
 
 ## Main features of Application
 
