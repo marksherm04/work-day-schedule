@@ -14,7 +14,7 @@ An application that allows you to plan your work day.  You can save on your brow
 - jQuery
 - Bootstrap
 - Various text and icon styling sites
-- 
+
 
 ## Website Link
 
