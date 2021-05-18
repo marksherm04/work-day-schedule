@@ -29,7 +29,7 @@ $(document).ready(function() {
                 $(this).addClass("present");
             }
             else {
-                $(this).removeCass("present");
+                $(this).removeClass("present");
                 $(this).removeClass("past");
                 $(this).addClass("future");
             }
