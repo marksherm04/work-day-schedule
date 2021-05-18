@@ -69,12 +69,6 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
-  .icon {
-    width: 18px;
-    height: 18px;
-    text-align: center;
-  }
 
   /* media queries */
   @media screen and (max-width: 768px), screen and (max-width: 575px) {
