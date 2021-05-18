@@ -1,3 +1,4 @@
+// Display current date
 var today = moment().format('L');
 $("#currentDay").html(today);
 
@@ -28,7 +29,7 @@ $(document).ready(function() {
                 $(this).addClass("present");
             }
             else {
-                $(this).removeClass("present");
+                $(this).removeCass("present");
                 $(this).removeClass("past");
                 $(this).addClass("future");
             }
