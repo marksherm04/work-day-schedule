@@ -73,4 +73,31 @@ body {
   .icon {
     width: 18px;
     height: 18px;
+    text-align: center;
   }
+
+  /* media queries */
+  @media screen and (max-width: 768px), screen and (max-width: 575px) {
+  .row {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .hour {
+    padding-right: 20%;
+    text-align: left;
+    font: bold;
+  }
+
+  .saveBtn {
+    border: 0;
+    border-radius: 0.25rem;
+    height: auto;
+  }
+
+  textarea {
+    min-height: 80px;
+    border: 0;
+    text-align: center;
+  }
+}
