@@ -18,7 +18,7 @@ An application that allows you to plan your work day.  You can save on your brow
 
 ## Website Link
 
-Click [here](https://marksherm04.github.io/work-day-schedule/) to go to Code Quiz.
+Click [here](https://marksherm04.github.io/work-day-schedule/) to go to Work Day Scheduler.
 
 
 ## Screenshot
