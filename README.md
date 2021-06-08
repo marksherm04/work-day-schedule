@@ -18,12 +18,12 @@ An application that allows you to plan your work day.  You can save on your brow
 
 ## Website Link
 
-Click [here](https://marksherm04.github.io/work-day-schedule/) to go to Code Quiz.
+Click [here](https://marksherm04.github.io/work-day-schedule/) to go to Work Day Scheduler.
 
 
 ## Screenshot
 
-<img width="2552" alt="Screen Shot 2021-05-17 at 9 58 03 PM" src="https://user-images.githubusercontent.com/81338255/118578905-05137400-b75b-11eb-84b5-935ab8b2bd54.png">
+<img width="2555" alt="Screen Shot 2021-05-18 at 11 12 19 AM" src="https://user-images.githubusercontent.com/81338255/118677090-f4e6ad80-b7c9-11eb-9c80-b47784b50045.png">
 
 
 ## Main features of Application
