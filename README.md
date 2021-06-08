@@ -23,7 +23,7 @@ Click [here](https://marksherm04.github.io/work-day-schedule/) to go to Work Day
 
 ## Screenshot
 
-<img width="2555" alt="Screen Shot 2021-05-18 at 11 12 19 AM" src="https://user-images.githubusercontent.com/81338255/118677090-f4e6ad80-b7c9-11eb-9c80-b47784b50045.png">
+<img width="2416" alt="Screen Shot 2021-06-08 at 2 43 46 PM" src="https://user-images.githubusercontent.com/81338255/121240349-38cc5000-c868-11eb-9e27-4215becf7ff3.png">
 
 
 ## Main features of Application
