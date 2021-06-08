@@ -11,10 +11,11 @@ $(document).ready(function() {
         localStorage.setItem(time, text);
     });
 
-    function workSchedule () {
+    function workSchedule() {
         var currentTime = moment().hour();
 
-
+        // using jQuery, it will change colors based on what time it is in the day - jQuery w3 schools exercises helped on this!
+        // looked into removing task when time passes, but that made the whole time slot disappear in this section
         $(".hour-slot").each(function () {
             var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
 
@@ -36,7 +37,7 @@ $(document).ready(function() {
         });
     };
 
-    // local storage 
+    // local storage for tasks already input
     $("#hour08 .task").val(localStorage.getItem("hour08"));
     $("#hour09 .task").val(localStorage.getItem("hour09"));
     $("#hour10 .task").val(localStorage.getItem("hour10"));
