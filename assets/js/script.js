@@ -1,3 +1,4 @@
 // Display current date
-var today = moment().format('LLLL');
-$("#currentDay").html(today);
+var todayDateTime = moment().format('LLLL');
+$("#currentDay").html(todayDateTime);
+
