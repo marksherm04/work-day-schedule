@@ -35,23 +35,15 @@ function workSchedule(element) {
         
     }
 
-
-
 // local storage set and get 
 //local storage set function
- 
-    $("#saveBtn").on("click", saveBtn);
 
-    function saveBtn(event) {
-        var text = $(event.target).siblings(".description").val();
-        var time = $(event.target).parent().attr("id");
-       if(text === "")
-        alert("Input Task")
-        else {
+    function createItem() {
+        var time = "#time.block";
+        var text = "textarea";
         localStorage.setItem(time, text);
-        alert("task saved");
-        }
     };
+    
 
 
 // hourly data saved to local storage to "get" 
@@ -72,10 +64,10 @@ $("#17-hour .description").val(localStorage.getItem("17-hour"));
 
 
 // // Then pass that element to function:
-// function loopTimeElements() {
+function loopTimeElements() {
     for (i = 9; i < 17; i++) {
         // TODO: get div id for all elements with class = "row time-block"
     }
-
+}
     workSchedule();
     
