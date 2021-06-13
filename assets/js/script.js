@@ -38,11 +38,17 @@ function workSchedule(element) {
 // local storage set and get 
 //local storage set function
 
-    function createItem() {
-        var time = "#time.block";
-        var text = "textarea";
-        localStorage.setItem(time, text);
-    };
+
+
+
+document.getElementById("myBtn").addEventListener("click", saveTask) 
+function saveTask() {
+    var time = $(".hour");
+    var text = $(".description");
+    localStorage.setItem(time, text);
+};
+    
+
     
 
 
@@ -61,7 +67,6 @@ $("#17-hour .description").val(localStorage.getItem("17-hour"));
 
 
 // LOOP THROUGH ALL ELEMENTS WHERE CLASS = "row time-block"
-
 
 // // Then pass that element to function:
 function loopTimeElements() {
