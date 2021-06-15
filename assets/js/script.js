@@ -12,7 +12,7 @@ function workSchedule(element) {
     var currentTime = moment().hour();
 
     // get hour of element (get id value)
-    var hourlyBlock = $(".time-block");
+    var hourlyBlock = $("#-hour");
     console.log(currentTime, hourlyBlock);
     // example: divid = 11-hour
     // get number before '-hour'
@@ -21,10 +21,13 @@ function workSchedule(element) {
         // compare hourly block to currentTime
         // set class based on results
         if (hourlyBlock < currentTime) {
+            $(this).removeClass("future");
+            $(this).removeClass("present");
             $(this).addClass("past");
         }
         else if (hourlyBlock === currentTime) {
             $(this).removeClass("past");
+            $(this).removeClass("future");
             $(this).addClass("present");
         }
         else {
@@ -33,7 +36,7 @@ function workSchedule(element) {
             $(this).addClass("future");
         }
         
-    }
+    };
 
 // local storage set and get 
 //local storage set function
@@ -41,11 +44,12 @@ function workSchedule(element) {
 
 
 
-document.getElementById("myBtn").addEventListener("click", saveTask) 
+ 
 function saveTask() {
-    var time = $(".hour");
+    document.getElementById("myBtn").addEventListener("click", saveTask)
+    var time = $("#-hour");
     var text = $(".description");
-    localStorage.setItem(time, text);
+    localStorage.setItem("time", "text");
 };
     
 
