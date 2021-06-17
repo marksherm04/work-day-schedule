@@ -11,14 +11,14 @@ function workSchedule(element) {
     // get current hour (military time)
     var currentTime = moment().hour();
 
+    // Loops through all elements that involve hour id
     for (i = 9; i < 18; i++) {
 
+    // #(id) + 9 + current hour will run the if else if and else statement below
     var hourlyBlock = $("#" + i + "-hour" );
     console.log(currentTime, hourlyBlock);
     
-    // TODO:
-        // compare hourly block to currentTime
-        // set class based on results
+        // adds and removes colors based on current time
         if (i < currentTime) {
             hourlyBlock.addClass("past");
         }
@@ -31,20 +31,16 @@ function workSchedule(element) {
     }      
 };
 
-// local storage set and get 
+
 //local storage set function
+var saveTasks = function() {
+    localStorage.setItem(text, time);
+}
 
-
-
-// document.get("saveBtn").addEventListener("click", saveTask)
- 
-// // function saveTask() {
-// //     var time = $("#-hour");
-// //     var text = $(".description");
-// //     console.log(time, text);
-// //     localStorage.setItem(time, text);
-  
-// // };
+$(".description").on("click", "saveBtn", function() {
+    var text = $(this).text().trim().val();
+    var time = $(this).hour().val();
+});
 
     
 
@@ -62,14 +58,5 @@ $("#15-hour .description").val(localStorage.getItem("15-hour"));
 $("#16-hour .description").val(localStorage.getItem("16-hour"));
 $("#17-hour .description").val(localStorage.getItem("17-hour"));
 
-
-// LOOP THROUGH ALL ELEMENTS WHERE CLASS = "row time-block"
-
-// // Then pass that element to function:
-function loopTimeElements() {
-    for (i = 9; i < 17; i++) {
-        // TODO: get div id for all elements with class = "row time-block"
-    }
-}
-    workSchedule();
+workSchedule();
     
