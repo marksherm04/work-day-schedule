@@ -28,8 +28,7 @@ function workSchedule(element) {
         else {
             hourlyBlock.addClass("future");
         }
-    }
-        
+    }      
 };
 
 // local storage set and get 
@@ -37,12 +36,15 @@ function workSchedule(element) {
 
 
 
-document.get("saveBtn").addEventListener("click", saveTask)
+// document.get("saveBtn").addEventListener("click", saveTask)
  
-function saveTask() {
-    
+// // function saveTask() {
+// //     var time = $("#-hour");
+// //     var text = $(".description");
+// //     console.log(time, text);
+// //     localStorage.setItem(time, text);
   
-};
+// // };
 
     
 
