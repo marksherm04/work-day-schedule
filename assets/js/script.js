@@ -11,47 +11,38 @@ function workSchedule(element) {
     // get current hour (military time)
     var currentTime = moment().hour();
 
-    // get hour of element (get id value)
-    var hourlyBlock = $("#-hour");
-    console.log(currentTime, hourlyBlock);
-    // example: divid = 11-hour
-    // get number before '-hour'
+    for (i = 9; i < 18; i++) {
 
+    var hourlyBlock = $("#" + i + "-hour" );
+    console.log(currentTime, hourlyBlock);
+    
     // TODO:
         // compare hourly block to currentTime
         // set class based on results
-        if (hourlyBlock < currentTime) {
-            $(this).removeClass("future");
-            $(this).removeClass("present");
-            $(this).addClass("past");
+        if (i < currentTime) {
+            hourlyBlock.addClass("past");
         }
-        else if (hourlyBlock === currentTime) {
-            $(this).removeClass("past");
-            $(this).removeClass("future");
-            $(this).addClass("present");
+        else if (i === currentTime) {
+            hourlyBlock.addClass("present");
         }
         else {
-            $(this).removeClass("past");
-            $(this).removeClass("present");
-            $(this).addClass("future");
+            hourlyBlock.addClass("future");
         }
+    }
         
-    };
+};
 
 // local storage set and get 
 //local storage set function
 
 
 
-
+document.get("saveBtn").addEventListener("click", saveTask)
  
 function saveTask() {
-    document.getElementById("myBtn").addEventListener("click", saveTask)
-    var time = $("#-hour");
-    var text = $(".description");
-    localStorage.setItem("time", "text");
-};
     
+  
+};
 
     
 
